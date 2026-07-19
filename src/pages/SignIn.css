@@ -1,0 +1,103 @@
+.signin-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  background:
+    radial-gradient(ellipse at 20% 50%, rgba(249, 115, 22, 0.08) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 20%, rgba(249, 115, 22, 0.06) 0%, transparent 40%),
+    var(--bg-primary);
+}
+
+.signin-card {
+  width: min(420px, 100%);
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 2.5rem 2rem;
+  box-shadow: var(--shadow);
+}
+
+.signin-card__brand {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.signin-card__icon {
+  font-size: 2.5rem;
+  display: block;
+  margin-bottom: 0.75rem;
+}
+
+.signin-card__title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 0.35rem;
+}
+
+.signin-card__subtitle {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.signin-card__error {
+  background: rgba(239, 68, 68, 0.12);
+  border: 1px solid rgba(239, 68, 68, 0.35);
+  color: #fca5a5;
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.875rem;
+  margin-bottom: 1.25rem;
+}
+
+.signin-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.signin-form__field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.signin-form__label {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.signin-form__input {
+  padding: 0.7rem 1rem;
+  background: var(--bg-input);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  color: var(--text-primary);
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.signin-form__input:focus {
+  border-color: var(--accent);
+}
+
+.signin-form__submit {
+  margin-top: 0.5rem;
+  padding: 0.75rem;
+  background: var(--accent);
+  color: #fff;
+  border-radius: var(--radius-sm);
+  font-weight: 700;
+  font-size: 1rem;
+  transition: background 0.2s, opacity 0.2s;
+}
+
+.signin-form__submit:hover:not(:disabled) {
+  background: var(--accent-hover);
+}
+
+.signin-form__submit:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
