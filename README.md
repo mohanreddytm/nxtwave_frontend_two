@@ -16,15 +16,6 @@ npm install
 npm run dev
 ```
 
-Open the URL shown in the terminal (typically `http://localhost:5173`).
-
-### Other scripts
-
-```bash
-npm run build    # production build
-npm run preview  # preview production build
-npm run lint     # ESLint
-```
 
 ## Test Credentials
 
@@ -35,7 +26,7 @@ npm run lint     # ESLint
 
 Sign-in uses the live API:
 
-`POST https://serverless-api-teal.vercel.app/api/auth/signin`
+`POST nxtwave-frontend-two.vercel.app`
 
 ## Routes
 
